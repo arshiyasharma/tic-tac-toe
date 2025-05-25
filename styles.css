@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: monospace;
+    font-size: 15vh;
+}
+body {
+    background-color: #F7B267;
+    text-align: center;
+}
+.game-container {
+    height: 70vh; /* 70% of the viewport height */
+    /* 1vh = 1% of the height of the viewport (i.e., the visible screen height). */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* Without display: flex, justify-content and align-items won't do anything. */
+}
+
+.board {
+    height: 65vmin; /* 60% of the viewport height or could
+    have been heigh: 60vmin  */
+    /* 60vmin = 60% of the smaller dimension of the viewport (width or height) */
+    width: 65vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5vmin; /* 2% of the smaller dimension of the viewport */
+}
+.reset {
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    font-size: 3vh;
+    font-family: monospace;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 1vmin;
+    border-style:ridge;
+}
+.reset:hover {
+    cursor: pointer;
+    border-style: dotted;
+}
+.cell {
+    height: 20vmin; /* 20% of the smaller dimension of the viewport */
+    width: 20vmin; /* 20% of the smaller dimension of the viewport */
+    border-radius: 2vmin;
+    border: none;
+    background-color: #F27059;
+    font-size: 12vmin;
+    font-family: 'Arial Black', sans-serif; 
+    color: #000000;
+
+}
+.cell:hover {
+    background-color: #F25C54;
+    cursor: pointer;
+    border: #333;
+    border-style: groove;
+}
+.btns:active {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border: #333;
+    border-style: inset;
+}
+.cell.occ { 
+    background-color: lightsalmon;
+    color: rgb(83, 82, 82);
+}
+.cell.occ:hover {
+    border:none;
+    cursor: not-allowed;
+}
+h2 {
+    font-family: monospace;
+    color: #98120B;
+    font-size: 4vh;
+}
+
+
